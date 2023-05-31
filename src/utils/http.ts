@@ -12,7 +12,7 @@ export interface IResponse {
 
 
 //返回的实例
-export const axiosInstance: AxiosInstance = axios.create({
+export const http: AxiosInstance = axios.create({
     timeout: 8000,
     baseURL: process.env.REACT_APP_BASE_URL,
     headers: {
@@ -30,27 +30,27 @@ export const axiosInstance: AxiosInstance = axios.create({
 });
 
 // axios实例拦截响应
-axiosInstance.interceptors.response.use(
-    (response: AxiosResponse) => {
-        if (response.headers.authorization) {
-            localStorage.setItem('app_token', response.headers.authorization);
+http.interceptors.response.use(
+    (config: AxiosResponse) => {
+        if (config.headers.authorization) {
+            localStorage.setItem('app_token', config.headers.authorization);
         }
-        if (response.data && response.data.token) {
-            localStorage.setItem('app_token', response.data.token);
+        if (config.data && config.data.token) {
+            localStorage.setItem('app_token', config.data.token);
         }
-        if (response.status === 200) {
-            return response;
+        if (config.status === 200) {
+            return config;
         } else {
-            showMessage(response.status);
-            return response
+            showMessage(config.status);
+            return config
         }
     },
     (error: any) => {
-        const {response} = error;
-        if (response) {
+        const {config} = error;
+        if (config) {
             // 请求已发出，但是不在2xx的范围
-            showMessage(response.status);
-            return Promise.reject(response.data);
+            showMessage(config.status);
+            return Promise.reject(config.data);
         } else {
             console.log('网络连接异常,请稍后再试!');
         }
@@ -60,7 +60,7 @@ axiosInstance.interceptors.response.use(
 
 // axios实例拦截请求
 // axios实例拦截请求
-axiosInstance.interceptors.request.use(
+http.interceptors.request.use(
     (config: any) => {
         const token = localStorage.getItem('app_token');
         if (token) {

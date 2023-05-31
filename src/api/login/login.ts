@@ -1,5 +1,5 @@
-import {axiosInstance} from "../../utils/api;
-import {IResponse} from '../../utils/api.ts'
+import {http} from "../../utils/http.ts";
+import {IResponse} from '../../utils/http.ts'
 import {ILogin} from "../../interface/login.ts";
 
 /**
@@ -8,5 +8,5 @@ import {ILogin} from "../../interface/login.ts";
  * @return {Promise}
  */
 export const Login = (params: ILogin): Promise<IResponse> => {
-    return axiosInstance.post('user/login', params).then(res => res.data);
+    return http.post('user/login', params).then(res => res.data);
 };
