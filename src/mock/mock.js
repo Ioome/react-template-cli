@@ -1,0 +1,1 @@
+var Mock = require('mockjs')
