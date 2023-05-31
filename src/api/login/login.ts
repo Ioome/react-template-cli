@@ -7,6 +7,6 @@ import {ILogin} from "../../interface/login.ts";
  * @params {ILogin} params
  * @return {Promise}
  */
-export const Login = (params: ILogin): Promise<IResponse> => {
+export const userLogin = (params: ILogin): Promise<IResponse> => {
     return http.post('user/login', params).then(res => res.data);
 };
