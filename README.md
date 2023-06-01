@@ -15,6 +15,7 @@
 
 - mock.js 数据拦截axios 随机数据生成
 - axios.js 基于 Promise 的第三方请求库
+- styled-components css in js 类库
 
 #### mock.js  配置
 
@@ -26,4 +27,10 @@ XMLHttpRequests。
 这里主流采用了
 > npm install axios  
 > yarn add axios
+> 
+
+#### styled-components
+> $ yarn add styled-components
+> 
+> TS声明：$ yarn add --dev @types/styled-components
 

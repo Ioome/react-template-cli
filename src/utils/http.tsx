@@ -2,7 +2,6 @@ import axios, {AxiosInstance, AxiosResponse} from 'axios';
 import qs from 'qs'
 import {showMessage} from "./status.ts";
 
-
 //返回 res.data 的interface
 export interface IResponse {
     code: number | string;
@@ -14,7 +13,7 @@ export interface IResponse {
 //返回的实例
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: 'http://localhost:8997/template/GUOLIAN/',
     headers: {
         Accept: "application/json",
         "Content-Type": "application/x-www-form-urlencoded"
@@ -52,7 +51,7 @@ http.interceptors.response.use(
             showMessage(config.status);
             return Promise.reject(config.data);
         } else {
-            console.log('网络连接异常,请稍后再试!');
+            console.log("网络连接异常,请稍后再试")
         }
 
     }
