@@ -1,6 +1,6 @@
 import axios, {AxiosInstance, AxiosResponse} from 'axios';
 import qs from 'qs'
-import {showMessage} from "./status.ts";
+import {showMessage} from "./status.tsx";
 
 //返回 res.data 的interface
 export interface IResponse {
