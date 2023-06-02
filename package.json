@@ -5,7 +5,7 @@
   "type": "module",
   "author": "sutton",
   "description": "React is a JavaScript library for building user interfaces.",
-  "keywords": [
+  "keywords":[
     "emotion",
     "axios",
     "dayjs",
