@@ -1,14 +1,34 @@
 {
   "name": "react-all-vite-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "sutton",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "keywords": [
+    "emotion",
+    "axios",
+    "dayjs",
+    "mockjs",
+    "framework",
+    "frontend",
+    "react",
+    "react-component",
+    "ui"
+  ],
+  "homepage": "https://github.com/Ioome/react-all-vite-template",
+  "bugs": "https://github.com/Ioome/react-all-vite-template/issues",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ioome/react-all-vite-template.git",
+    "directory": "packages/react"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",
