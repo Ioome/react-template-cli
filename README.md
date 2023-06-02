@@ -4,6 +4,24 @@
 
 开箱即用的项目模板，拥有主流的技术搭配
 
+### 规范化
+
+规范的代码可以促进团队合作
+
+规范的代码可以降低维护成本
+
+规范的代码有助于 code review（长得都不一样，我还怎么review）
+
+养成代码规范的习惯，有助于程序员自身的成长
+
+#### 常见规范
+1. 代码格式规范
+2. 统一项目结构
+3. 前后端联调沟通的规范
+4. 文件命名规范
+5. 样式管理规范
+6. git flow 工作流
+
 ### 项目构建基础
 
 - "react": "^18.2.0",
@@ -27,10 +45,11 @@ XMLHttpRequests。
 这里主流采用了
 > npm install axios  
 > yarn add axios
-> 
+>
 
 #### styled-components
+
 > $ yarn add styled-components
-> 
+>
 > TS声明：$ yarn add --dev @types/styled-components
 
