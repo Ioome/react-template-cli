@@ -13,7 +13,7 @@ export interface IResponse {
 //返回的实例
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
-    baseURL: 'http://localhost:8997/template/GUOLIAN/',
+    baseURL: process.env.REACT_APP_BASE_URL,
     headers: {
         Accept: "application/json",
         "Content-Type": "application/x-www-form-urlencoded"
