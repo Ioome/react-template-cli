@@ -57,6 +57,65 @@ npm test
 yarn test
 ```
 
+
+
+
+
+# 项目构建基构
+
+- "react": "^18.2.0",
+- "react-dom": "^18.2.0"
+- "Node": v16.14.1
+- "vite": "^4.3.9"
+
+### 项目技术组合
+
+- mock.js 数据拦截axios 随机数据生成
+- axios.js 基于 Promise 的第三方请求库
+- styled-components css in js 类库
+
+
+
+## vite 配置 ❤️‍🔥
+
+
+
+![](https://vitejs.cn/logo.svg)
+
+为什么选择  Vite 
+
+
+
+
+
+## axios 配置 ❤️‍🔥
+
+![axios](https://th.bing.com/th/id/OIP.-YH9SzgzKWU0X4MhEkxWQQHaHa?pid=ImgDet&rs=1)
+
+Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中。 它是 isomorphic 的(
+即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js http 模块, 而在客户端 (浏览端) 则使用
+XMLHttpRequests。
+这里主流采用了
+
+> npm install axios  
+> yarn add axios
+
+## ts 配置 ❤️‍🔥
+
+![ts](https://www.leixue.com/uploads/2019/08/TypeScript.png!760)
+
+## mock.js  配置
+
+
+
+## styled-components
+
+> $ yarn add styled-components
+>
+> TS声明：$ yarn add --dev @types/styled-components
+
+
+
 # 规范化 
 
 > 规范的代码可以促进团队合作
@@ -92,56 +151,6 @@ yarn test
     { type: 'build', section: '📦‍ Build System | 打包构建' },
     { type: 'chore', section: '🚀 Chore | 构建/工程依赖/工具' },
     { type: 'ci', section: '👷 Continuous Integration | CI 配置' }
-
-# 项目构建基构
-
-- "react": "^18.2.0",
-- "react-dom": "^18.2.0"
-- "Node": v16.14.1
-- "vite": "^4.3.9"
-
-### 项目技术组合
-
-- mock.js 数据拦截axios 随机数据生成
-- axios.js 基于 Promise 的第三方请求库
-- styled-components css in js 类库
-
-#### mock.js  配置
-
-#### axios.js 配置
-
-Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中。 它是 isomorphic 的(
-即同一套代码可以运行在浏览器和node.js中)。在服务端它使用原生 node.js http 模块, 而在客户端 (浏览端) 则使用
-XMLHttpRequests。
-这里主流采用了
-> npm install axios  
-> yarn add axios
-
-#### styled-components
-
-> $ yarn add styled-components
->
-> TS声明：$ yarn add --dev @types/styled-components
-
-## vite 配置 ❤️‍🔥
-
-
-
-![](https://vitejs.cn/logo.svg)
-
-## axios 配置 ❤️‍🔥
-
-![axios](https://th.bing.com/th/id/OIP.-YH9SzgzKWU0X4MhEkxWQQHaHa?pid=ImgDet&rs=1)
-
-## ts 配置 ❤️‍🔥
-
-![ts](https://www.leixue.com/uploads/2019/08/TypeScript.png!760)
-
-
-
-
-
-
 
 
 
