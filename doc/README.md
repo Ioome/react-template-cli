@@ -1,82 +1,74 @@
-# Vite-React 😈
+# Vite  + React 通用模板 😈
 
+![4k](https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
+`开箱即用的项目模板，拥有主流的技术搭配` 快速构建同通用系统框架 ,该项目模板提供了一个现成的基础框架，使您能够立即开始开发项目，无需从头构建系统。它集成了一系列主流的技术.
 
+# 特性 🧱
 
+- 🍇  支持 Vite 打包模式，省略系统搭建过程，专注业务开发
+-  🍈 开箱即用的工程能力：TypeScript/Webpack5/Vite/CSS/Mock/Axios
+-  🍉 贴合业务的最佳实践：目录规范、代码规范、路由方案、状态管理、提交规范，数据请求等等.....
+-   🍊 单体系统的应用模式：CSR，SPA 模式处理数据渲染层.
 
+# 目录 📗
 
-
-
+[TOC]
 
 # 启动项目 🛩️
 
-请按照以下步骤启动项目📦：
-首先，确保您的开发环境已经配置好，并且已经安装了以下软件和工具：Node.js：确保您已经安装了 Node.js 运行时。npm 或 yarn：这是用于安装项目依赖项的软件包管理器。 打开命令行终端，并导航到项目的根目录。
+请按照以下步骤启动项目📦：首先，确保您的开发环境已经配置好，并且已经安装了以下软件和工具：node.js：确保您已经安装了 node.js 运行时。npm 或 yarn：这是用于安装项目依赖项的软件包管理器。 打开命令行终端，并导航到项目的根目录。
 在终端中运行以下命令以安装项目所需的依赖项：
 
-```yaml
+```shell
 npm install
 或
 yarn install
 ```
 依赖项安装完成后，您可以执行以下命令来启动项目的开发服务器：
-```markdown
+```shell
 npm run dev
-或
+
 yarn dev
 ```
-这将使用 vite 命令来启动开发服务器，并自动编译和热重载您的代码。您将能够在浏览器中访问项目。
+这将使用 vite 命令来启动开发服务器，并自动编译和热重载您的代码。您将能够在浏览器中访问项目。如果您想构建项目以进行生产部署，可以运行以下命令：
 
-如果您想构建项目以进行生产部署，可以运行以下命令：
-
-shell
-Copy code
+``` shell
 npm run build
 或
-
-shell
-Copy code
 yarn build
 这将使用 tsc 命令将 TypeScript 代码编译为 JavaScript，并使用 vite 命令构建优化后的项目文件。
+。
+```
 
-如果您想预览构建后的项目，可以运行以下命令：
+如果您想预览构建后的项目，可以运行以下命令,这将使用  vite 命令启动一个本地服务器，并在浏览器中预览构建后的项目📦
 
-shell
-Copy code
+``` shell
 npm run preview
 或
-
-shell
-Copy code
 yarn preview
-这将使用 vite 命令启动一个本地服务器，并在浏览器中预览构建后的项目。
+```
 
-最后，如果您想运行项目的测试套件，可以使用以下命令：
+最后，如果您想运行项目📦的测试套件，可以使用以下命令：这将使用 jest 命令来运行项目的测试用例
 
-shell
-Copy code
+``` shell
 npm test
 或
-
-shell
-Copy code
 yarn test
-这将使用 jest 命令来运行项目的测试用例
-### description
+```
 
-开箱即用的项目模板，拥有主流的技术搭配
+## 规范化 ❤️‍🔥
 
-### 规范化
+> 规范的代码可以促进团队合作
+>
+> 规范的代码可以降低维护成本
+>
+> 规范的代码有助于 code review（长得都不一样，我还怎么review）
+>
+> 养成代码规范的习惯，有助于程序员自身的成长
+>
 
-规范的代码可以促进团队合作
-
-规范的代码可以降低维护成本
-
-规范的代码有助于 code review（长得都不一样，我还怎么review）
-
-养成代码规范的习惯，有助于程序员自身的成长
-
-#### 常见规范
+### 常见规范
 
 1. 代码格式规范
 2. 统一项目结构
@@ -101,7 +93,7 @@ yarn test
     { type: 'chore', section: '🚀 Chore | 构建/工程依赖/工具' },
     { type: 'ci', section: '👷 Continuous Integration | CI 配置' }
 
-### 项目构建基础
+## 项目构建基础 ❤️‍🔥
 
 - "react": "^18.2.0",
 - "react-dom": "^18.2.0"
@@ -131,3 +123,36 @@ XMLHttpRequests。
 >
 > TS声明：$ yarn add --dev @types/styled-components
 
+## vite 配置 ❤️‍🔥
+
+
+
+![](https://vitejs.cn/logo.svg)
+
+## axios 配置 ❤️‍🔥
+
+![axios](https://th.bing.com/th/id/OIP.-YH9SzgzKWU0X4MhEkxWQQHaHa?pid=ImgDet&rs=1)
+
+## ts 配置 ❤️‍🔥
+
+![ts](https://www.leixue.com/uploads/2019/08/TypeScript.png!760)
+
+
+
+
+
+
+
+
+
+
+
+> ## 联系我们  
+>
+> ## 		  💬：Liow_expression
+>
+> ##           📮: a2572213252@gmail.com
+>
+> ​			
+>
+> ​																													🦹王兆斌
