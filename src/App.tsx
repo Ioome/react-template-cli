@@ -1,11 +1,14 @@
-import Login from "@/components/login";
+import Login from '@/components/login';
 
 function App() {
     return (
         <>
-            <Login/>
+            <button className="prettier-class" id="prettier-id">
+                Click Here
+            </button>
+            <Login />
         </>
-    )
+    );
 }
 
-export default App
+export default App;

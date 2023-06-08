@@ -1,6 +1,6 @@
-import {defineConfig} from 'vite'
-import react from '@vitejs/plugin-react'
-import { visualizer } from 'rollup-plugin-visualizer'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
     define: {
@@ -9,8 +9,8 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': '/src/',
-            '@components':'/src/components/',
-            '@utils':'/src/utils'
+            '@components': '/src/components/',
+            '@utils': '/src/utils',
         },
     },
     plugins: [
@@ -19,8 +19,8 @@ export default defineConfig({
             gzipSize: true,
             brotliSize: true,
             emitFile: false,
-            filename: "result.html", //分析图生成的文件名
-            open:true //如果存在本地服务端口，将在打包后自动展示
-        })
+            filename: 'result.html', //分析图生成的文件名
+            open: true, //如果存在本地服务端口，将在打包后自动展示
+        }),
     ],
-})
+});

@@ -1,55 +1,61 @@
 {
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"],
-      "@component/*":["./src/component/*"],
-      "@utils/*":["./src/utils/*"]
+    "compilerOptions": {
+        "paths": {
+            "@/*": [
+                "./src/*"
+            ],
+            "@component/*": [
+                "./src/component/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ]
+        },
+        /**指定 ECMAScript 目标版本*/
+        "target": "ES2020",
+        "useDefineForClassFields": true,
+        /*注入库*/
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        /* 通过为导入内容创建命名空间*/
+        "esModuleInterop": true,
+        /*用来指定允许从没有默认导出的模块中默认导入 */
+        "allowSyntheticDefaultImports": true,
+        /*指定使用模块*/
+        "module": "ESNext",
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        /* Bundler mode */
+        /**用于选择模块解析策略*/
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        /*isolatedModules的值为true或false，指定是否将每个文件作为单独的模块，默认为true，它不可以和declaration同时设定*/
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        /* Linting */
+        /*严格模式将会打开下面的几个选项*/
+        "strict": true,
+        /*默认false,是否检测定义了但是没使用的变量*/
+        "noUnusedLocals": true,
+        /*用于检查是否有在函数体中没有使用的参数*/
+        "noUnusedParameters": true,
+        /*用于检查switch中是否有case没有使用break跳出switch*/
+        "noFallthroughCasesInSwitch": true
     },
-    /**指定 ECMAScript 目标版本*/
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    /*注入库*/
-    "lib": [
-      "ES2020",
-      "DOM",
-      "DOM.Iterable"
+    /*指定需要编译文件*/
+    "include": [
+        "src"
     ],
-    /* 通过为导入内容创建命名空间*/
-    "esModuleInterop": true,
-    /*用来指定允许从没有默认导出的模块中默认导入 */
-    "allowSyntheticDefaultImports": true,
-    /*指定使用模块*/
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    /* Bundler mode */
-    /**用于选择模块解析策略*/
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    /*isolatedModules的值为true或false，指定是否将每个文件作为单独的模块，默认为true，它不可以和declaration同时设定*/
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    /* Linting */
-    /*严格模式将会打开下面的几个选项*/
-    "strict": true,
-    /*默认false,是否检测定义了但是没使用的变量*/
-    "noUnusedLocals": true,
-    /*用于检查是否有在函数体中没有使用的参数*/
-    "noUnusedParameters": true,
-    /*用于检查switch中是否有case没有使用break跳出switch*/
-    "noFallthroughCasesInSwitch": true
-  },
-  /*指定需要编译文件*/
-  "include": [
-    "src"
-  ],
-  /*不编译的文件*/
-  "exclude": [],
-  "references": [
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ]
+    /*不编译的文件*/
+    "exclude": [],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
 }
