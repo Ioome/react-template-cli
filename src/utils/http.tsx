@@ -1,6 +1,6 @@
-import axios, {AxiosInstance, AxiosResponse} from 'axios';
-import qs from 'qs'
-import {showMessage} from "./status.tsx";
+import axios, { AxiosInstance, AxiosResponse } from 'axios';
+import qs from 'qs';
+import { showMessage } from './status.tsx';
 
 //返回 res.data 的interface
 export interface IResponse {
@@ -9,19 +9,18 @@ export interface IResponse {
     msg: string;
 }
 
-
 //返回的实例
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
     baseURL: process.env.REACT_APP_BASE_URL,
     headers: {
-        Accept: "application/json",
-        "Content-Type": "application/x-www-form-urlencoded"
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded'
     },
     transformRequest: [
         //请求
         function (data) {
-            delete data.Authorization
+            delete data.Authorization;
             data = qs.stringify(data);
             return data;
         }
@@ -41,33 +40,35 @@ http.interceptors.response.use(
             return config;
         } else {
             showMessage(config.status);
-            return config
+            return config;
         }
     },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (error: any) => {
-        const {config} = error;
+        const { config } = error;
         if (config) {
             // 请求已发出，但是不在2xx的范围
             showMessage(config.status);
             return Promise.reject(config.data);
         } else {
-            console.log("网络连接异常,请稍后再试")
+            console.log('网络连接异常,请稍后再试');
         }
-
     }
-)
+);
 
 // axios实例拦截请求
 // axios实例拦截请求
 http.interceptors.request.use(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (config: any) => {
         const token = localStorage.getItem('app_token');
         if (token) {
-            config.headers.Authorization = `Bearer ${token}`
+            config.headers.Authorization = `Bearer ${token}`;
         }
         return config;
     },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (error: any) => {
         return Promise.reject(error);
     }
-)
+);
