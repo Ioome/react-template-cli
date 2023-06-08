@@ -74,13 +74,87 @@ yarn test
 
 
 
-## vite 配置 ❤️‍🔥
+## vite 配置  ❤️‍🔥
 
 
 
 ![](https://vitejs.cn/logo.svg)
 
-为什么选择  Vite 
+#### 为什么选择  Vite 
+
+构建越来越大型的应用时，需要处理的 JavaScript 代码量也呈指数级增长。包含数千个模块的大型项目相当普遍，启动可能花费你在工作的好几分钟，意味着能让你多摸更多的鱼🎣。对依赖构建时， esbuild 从 js 编写的预构建器，替换成了速度更加强悍的  go 语言，这是一个十分明智的选择.所以这是我选择 Vite 的基本原因，笔者非常喜欢 Vite 带来的速度， 使用 Webpack 启动前台项目过程十分缓慢，在项目越来越大 的情况下,所以速度是我选择 Vite 的最重要因素.
+
+构建 Vite 
+
+`14.18+，16+ ` 对应的版本
+
+#### 使用 NPM:
+
+bash
+
+```bash
+$ npm create vite@latest
+```
+
+使用 Yarn:
+
+```bash
+$ yarn create vite
+```
+
+使用 PNPM:
+
+```bash
+$ pnpm create vite
+```
+
+#### 模板构建
+
+可根据对应的模板创建指定的 前端框架，
+
+```bash
+# npm 6.x
+npm create vite@latest my-vue-app --template vue
+
+# npm 7+, extra double-dash is needed:
+npm create vite@latest my-vue-app -- --template vue
+
+# yarn
+yarn create vite my-vue-app --template vue
+
+# pnpm
+pnpm create vite my-vue-app --template vue
+```
+
+对应的模板可以从社区模板查看:   [社区维护模板](https://github.com/vitejs/awesome-vite#templates) 🍥
+
+#### 此系统启动脚本
+
+```js
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+  }
+```
+
+#### 此系统搭建 Vite 项目目标
+
+1. 提升项目启动配置
+2. 别名设置
+3. 增加项目插件
+4. 启动时项目的日志
+
+#### 加快 Vite 构建速度
+
+
+
+#### 使用 插件[plugin] 定制化
+
+
+
+## 别名配置
 
 
 
