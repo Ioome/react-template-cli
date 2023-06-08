@@ -142,17 +142,20 @@ pnpm create vite my-vue-app --template vue
 #### 此系统搭建 Vite 项目目标
 
 1. 提升项目启动配置
-2. 别名设置
-3. 增加项目插件
-4. 启动时项目的日志
+2. 别名设置 ✅
+3. 增加项目插件 
+4. 环境变量配置
+5. 打包图 ✅
 
 #### 加快 Vite 构建速度
 
-
-
 #### 使用 插件[plugin] 定制化
 
+#### 打包分析
 
+```js
+yarn add --dev rollup-plugin-visualizer
+```
 
 ## 别名配置
 
@@ -205,6 +208,14 @@ vite.config.js
             '@utils':'/src/utils'
  },
 ```
+
+#### 同时配置的原因
+
+配置了 tsconfig.json 只是告诉 TypeScript 编译器在编译时如何解析别名，而并不会影响到 Vite 的运行时。因此，我们还需要在 Vite 配置文件中进行配置，以便让 Vite 在开发和生产环境下都能正确地解析别名。
+
+在 vite.config.js 中配置别名的好处是，它可以确保你所有使用的别名都被正确地 resolve。比如，在使用 import './styles/global.css' 引入全局 CSS 样式时，如果需要获取某个相对路径资源，就可以使用 @/ 别名代替项目的根路径，而无需手动拼接路径。
+
+总之，tsconfig.json 用于 TypeScript 的静态类型检查和编译，而 vite.config.js 则用于 Vite 的打包和构建过程，两者都是必需的。
 
 
 
