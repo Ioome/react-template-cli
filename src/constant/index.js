@@ -8,12 +8,9 @@ export class Constants {
     public static  MIN_VALUE = 0;
 
     public static  COLORS = {
-        RED: '#FF0000',
-        GREEN: '#00FF00',
-        BLUE: '#0000FF',
+        RED: '#FF0000', GREEN: '#00FF00', BLUE: '#0000FF',
     };
     public static  MAGIC_VALUE = {
-        MAX: Constants.MAX_VALUE,
-        MIN: Constants.MIN_VALUE
+        MAX: Constants.MAX_VALUE, MIN: Constants.MIN_VALUE
     }
 }
