@@ -1,4 +1,4 @@
-# Vite  + React 通用模板 😈
+<h1 align="center">Vite  + React 通用模板😈</h1>
 
 ![4k](https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
 
@@ -156,7 +156,55 @@ pnpm create vite my-vue-app --template vue
 
 ## 别名配置
 
+1. 在项目根目录下创建 tsconfig.json 文件，并添加以下代码：
 
+```json
+json复制代码{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+}
+```
+
+2. 在 Vite 的配置文件 vite.config.ts 中添加以下代码：
+
+```ts
+ts复制代码import path from 'path';
+
+export default {
+  // ...其他配置项
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src')
+    }
+  }
+}
+```
+
+#### 例子
+
+tsconfig.json
+
+```js
+    "paths": {
+      "@/*": ["./src/*"],
+      "@component/*":["./src/component/*"],
+      "@utils/*":["./src/utils/*"]
+    },
+```
+
+vite.config.js
+
+```js
+  alias: {
+            '@': '/src/',
+            '@components':'/src/components/',
+            '@utils':'/src/utils'
+ },
+```
 
 
 

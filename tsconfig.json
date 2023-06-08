@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@component/*":["./src/component/*"],
+      "@utils/*":["./src/utils/*"]
     },
     /**指定 ECMAScript 目标版本*/
     "target": "ES2020",

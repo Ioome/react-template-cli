@@ -5,6 +5,8 @@
   "type": "module",
   "author": "sutton",
   "description": "React is a JavaScript library for building user interfaces.",
+  "homepage": "https://github.com/Ioome/react-all-vite-template",
+  "bugs": "https://github.com/Ioome/react-all-vite-template/issues",
   "keywords": [
     "emotion",
     "axios",
@@ -16,8 +18,6 @@
     "react-component",
     "ui"
   ],
-  "homepage": "https://github.com/Ioome/react-all-vite-template",
-  "bugs": "https://github.com/Ioome/react-all-vite-template/issues",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

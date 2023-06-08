@@ -1,6 +1,6 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import {vitePluginLogger} from "vite-plugin-logger";
+
 export default defineConfig({
     define: {
         'process.env': process.env,
@@ -8,6 +8,8 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': '/src/',
+            '@components':'/src/components/',
+            '@utils':'/src/utils'
         },
     },
     plugins: [
