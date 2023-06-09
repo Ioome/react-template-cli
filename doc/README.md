@@ -162,7 +162,7 @@ yarn add --dev rollup-plugin-visualizer
 1. 在项目根目录下创建 tsconfig.json 文件，并添加以下代码：
 
 ```json
-json复制代码{
+{
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
@@ -266,7 +266,7 @@ XMLHttpRequests。
 4. 文件命名规范
 5. 样式管理规范
 6. git flow 工作流
-7. 代码提交规范
+7. 代码提交规范 
 
 ###  代码格式规范  .editorconfig 
 
@@ -292,10 +292,29 @@ trim_trailing_whitespace = false
 
 已移至 Dic.md
 
+####  **git提交时检测语法规范** 
 
-####  
+1. ### 代码提交前husky检测语法
 
+2. 安装husky
 
+3. 配置husky的pre-commit钩子
+
+4.  安装依赖后自动husky install
+
+5. **代码提交时检测commit备注规范**
+
+6.  安装和配置commitlint
+
+7. 配置husky监听commit-msg
+
+8. **添加git commit辅助备注信息**
+
+9. 安装commitizen
+
+10. 配置commitizen自定义提示规则
+
+11. 测试commitizen辅助提交
 
 ### 代码提交规范
 
@@ -311,6 +330,55 @@ trim_trailing_whitespace = false
     { type: 'build', section: '📦‍ Build System | 打包构建' },
     { type: 'chore', section: '🚀 Chore | 构建/工程依赖/工具' },
     { type: 'ci', section: '👷 Continuous Integration | CI 配置' }
+
+### 文件命名规范
+
+- 每一个文件只包含一个组件，每一个基本组件只包含单一功能  
+- 如果文件返回是一个类，文件名首字母大写  
+- 测试用例文件名使用.spec.jsx后缀  
+- 每一个组件使用一个单独的测试用例文件  
+
+### Js规范
+
+- 使用es6+开发，尽量使用常用的ES6+语法  
+- 使用jsx语法  
+- 组件文件命名使用大驼峰， ComponentDemo  
+- 带命名空间的组件，如果一个组件包含只有自身使用的子组件，以该组件为命名空间编写组件，例如Table，Table.Head  
+- 不使用displayName命名  
+- 自定义属性使用data-  
+- 使用propTypes进行props类型校验  
+- 使用defaultProps定义默认参数  
+- 定义props避开react关键字及保留字，常用的props及state定义可参考下表  
+- 尽量少或者不使用ref获取和操作dom节点，使用state和prop进行控制dom，如遇必须使用的情况，添加详细注释信息  
+- 事件调用使用在元素上onClick调用  
+- 注意，react和html的表单元素的差异  
+- 不支持mixin，使用decorator进行扩展和高阶组件方式扩展。  
+- 不能私自添加第三方js库，如需要使用，必须通知本组组长，并在工作群里提出，At所有前端负责人，经讨论后再添加
+- 尽量多而有用的代码注释，方法使用块级注释  
+- 避免使用定时器类的编码，如必须使用，需添加详细注释，各组长合并代码时需要审查是否合理，合确认是否含有销毁方法  
+- 自身定义的props属性应避免与react的关键字相同  
+
+### 样式规范
+
+- 在添加src/style/theme/default.sess中添加公共样式变量，各开发人员尽可能使用里面定义的公共样式变量  
+- 组件多样式调用，使用classnames模块，进行样式处理，使用className调用  
+- 所有组件类名命名以‘expo-’开头  
+
+### 通用组件接口规范
+
+| **参数**  | **说明**              | **类型** | **默认值** |
+| --------- | --------------------- | -------- | ---------- |
+| size      | 尺寸                  | string   | medium     |
+| color     | 颜色                  | string   | ''         |
+| shape     | 形状                  | string   | ''         |
+| disabled  | 是否禁用              | bool     | false      |
+| className | 增加额外的类名        | string   | ''         |
+| htmlType  | html dom 的 type 属性 | string   | string     |
+| style     | 内联样式              | object   | object     |
+
+
+
+
 
 
 
