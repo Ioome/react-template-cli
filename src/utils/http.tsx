@@ -12,7 +12,7 @@ export interface IResponse {
 //返回的实例
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
-    baseURL: process.env.REACT_APP_BASE_URL,
+    baseURL: import.meta.env.VITE_BASE_URL,
     headers: {
         Accept: 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded'
