@@ -162,7 +162,7 @@ yarn add --dev rollup-plugin-visualizer
 1. 在项目根目录下创建 tsconfig.json 文件，并添加以下代码：
 
 ```json
-json复制代码{
+{
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
