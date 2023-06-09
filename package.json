@@ -25,7 +25,11 @@
         "preview": "vite preview",
         "test": "jest",
         "pre-check": "npm run lint",
-        "postinstall": "husky install"
+        "postinstall": "husky install",
+        "dev:local": "vite --mode _local",
+        "dev:test": "vite --mode test",
+        "build:beta": "vite build --mode beta",
+        "build:release": "vite build --mode release"
     },
     "repository": {
         "type": "git",
