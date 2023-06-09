@@ -219,7 +219,7 @@ vite.config.js
 
 
 
-## axios 配置 ❤️‍🔥
+## axios 配置 
 
 ![axios](https://th.bing.com/th/id/OIP.-YH9SzgzKWU0X4MhEkxWQQHaHa?pid=ImgDet&rs=1)
 
@@ -231,7 +231,7 @@ XMLHttpRequests。
 > npm install axios  
 > yarn add axios
 
-## ts 配置 ❤️‍🔥
+## ts 配置 
 
 ![ts](https://www.leixue.com/uploads/2019/08/TypeScript.png!760)
 
