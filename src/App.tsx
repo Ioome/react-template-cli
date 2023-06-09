@@ -4,9 +4,7 @@ function App() {
     return (
         <>
             <button className="prettier-class" id="prettier-id">
-                Click
-
-                H ere
+                Clic H ere
             </button>
             <Login />
         </>

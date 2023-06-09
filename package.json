@@ -39,6 +39,7 @@
         "@mantine/hooks": "^6.0.13",
         "@mui/material": "^5.13.3",
         "axios": "^1.4.0",
+        "commitizen": "^4.3.0",
         "dayjs": "^1.11.7",
         "mockjs": "^1.1.0",
         "prettier": "^2.8.8",
