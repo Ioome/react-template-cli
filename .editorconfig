@@ -5,7 +5,6 @@ indent_size = 4 # 缩进的空格数
 charset = utf-8 # 设置字符集
 trim_trailing_whitespace = true # 删除一行中的前后空格
 insert_final_newline = true # 设为true表示使文件以一个空白行结尾
-end_of_line = lf
 max_line_length = 120
 
 [**.md] # 匹配md文件

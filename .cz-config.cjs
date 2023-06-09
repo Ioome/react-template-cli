@@ -1,5 +1,4 @@
-export default {
-    // 可选类型，和上面commitlint.config.js配置的规则一一对应
+module.exports = {
     types: [
         { value: 'feat', name: 'feat: 新功能' },
         { value: 'fix', name: 'fix: 修复' },
