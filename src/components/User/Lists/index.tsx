@@ -6,6 +6,7 @@ import { User } from '@/interface/User/Lists/type.ts';
  * @constructor
  */
 const UserList: React.FC = () => {
+    console.log('sd');
     const [users, setUsers] = useState<User[]>([]);
     useEffect(() => {
         setUsers([{ id: 1, name: 'hello', email: '2572213252@qq.com' }]);

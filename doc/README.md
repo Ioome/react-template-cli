@@ -149,19 +149,58 @@ pnpm create vite my-vue-app --template vue
 
 1. 提升项目启动配置❎
 2. 别名设置 ✅
-3. 增加项目插件 ❎
-4. 环境变量配置 ❎
+3. 增加项目插件 ✅
+4. 环境变量配置 ✅
 5. 打包图 ✅
 
 #### 加快 Vite 构建速度
 
 #### 使用 插件[plugin] 定制化
 
+1. vite-plugin-restart 自动重启
+
 #### 打包分析
 
 ```js
 yarn add --dev rollup-plugin-visualizer
 ```
+
+#### 环境配置
+
+```
+VITE_OWNER=sutton
+VITE_URL=http://localhost:8997/template/GUOLIAN/
+VITE_POSITION=TEST
+```
+
+配置
+
+```
+{
+  "name": "vite-mul-env-learn",
+  "version": "0.0.0",
+  "scripts": {
+    "dev:local": "vite --mode _local",
+    "dev:test": "vite --mode test",
+    "build:beta": "vite build --mode beta",
+    "build:release": "vite build --mode release",
+    "lint": "eslint --fix --ext .js,.vue,ts src"
+  }
+}
+
+```
+
+
+
+Vite 在一个特殊的 **`import.meta.env`** 对象上暴露环境变量。这里有一些在所有情况下都可以使用的内建变量：
+
+> - **`import.meta.env.MODE`**: {string} 应用运行的[模式](https://link.juejin.cn?target=https%3A%2F%2Fcn.vitejs.dev%2Fguide%2Fenv-and-mode.html%23modes)。
+> - **`import.meta.env.BASE_URL`**: {string} 部署应用时的基本 URL。他由[`base` 配置项](https://link.juejin.cn?target=https%3A%2F%2Fcn.vitejs.dev%2Fconfig%2F%23base)决定。
+> - **`import.meta.env.PROD`**: {boolean} 应用是否运行在生产环境。
+> - **`import.meta.env.DEV`**: {boolean} 应用是否运行在开发环境 (永远与 `import.meta.env.PROD`相反)。
+> - **`import.meta.env.SSR`**: {boolean} 应用是否运行在服务器渲染环境
+
+
 
 ## 别名配置
 
@@ -260,6 +299,10 @@ XMLHttpRequests。
 ## router 配置
 
 ![React Router v6 - Protected Routes, Nested Routes, Active Link, Search ...](https://i.ytimg.com/vi/d5kJDe1Y6ZU/maxresdefault.jpg)
+
+
+
+
 
 
 

@@ -5542,6 +5542,13 @@ victory-vendor@^36.6.8:
     d3-time "^3.0.0"
     d3-timer "^3.0.1"
 
+vite-plugin-restart@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmmirror.com/vite-plugin-restart/-/vite-plugin-restart-0.3.1.tgz#7c4f04bab9302e970e797e59487e3a6740a77918"
+  integrity sha512-LVe74MLUwaOzXVUgRGiphYbAYNgdGF6mP5vxj5BKcKkdmzvuuw79qcNgn9kHKKaIlCCjmOUiY3qlJ8jBSBUCoA==
+  dependencies:
+    micromatch "^4.0.5"
+
 vite@^4.3.9:
   version "4.3.9"
   resolved "https://registry.npmmirror.com/vite/-/vite-4.3.9.tgz"
