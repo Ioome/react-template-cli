@@ -352,7 +352,12 @@ XMLHttpRequests。
 
 
 
+#### vitest
 
+```
+https://cn.vitest.dev/guide/
+https://juejin.cn/post/6912312960459210760#heading-4
+```
 
 
 
