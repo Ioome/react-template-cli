@@ -2,6 +2,9 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import qs from 'qs';
 import { showMessage } from './status.tsx';
 
+//导出
+export const baseURL = import.meta.env.VITE_BASE_URL;
+
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
     baseURL: import.meta.env.VITE_BASE_URL,
@@ -9,18 +12,36 @@ export const http: AxiosInstance = axios.create({
         Accept: 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded'
     },
+    // 用于在发送请求之前对请求数据进行处理或转换
     transformRequest: [
         function (data) {
+            //删除 权限
             delete data.Authorization;
+            //数据转换
             data = qs.stringify(data);
+            //返回数据
             return data;
         }
     ]
 });
 
-// axios实例拦截响应
+http.interceptors.request.use(
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (config: any) => {
+        const token = localStorage.getItem('app_token');
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+        }
+        return config;
+    },
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (error: any) => {
+        return Promise.reject(error);
+    }
+);
+
 http.interceptors.response.use(
-    (config: AxiosResponse) => {
+    (config: AxiosResponse): AxiosResponse => {
         if (config.headers.authorization) {
             localStorage.setItem('app_token', config.headers.authorization);
         }
@@ -35,7 +56,7 @@ http.interceptors.response.use(
         }
     },
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (error: any) => {
+    (error: any): Promise<never> => {
         const { config } = error;
         if (config) {
             // 请求已发出，但是不在2xx的范围
@@ -43,23 +64,7 @@ http.interceptors.response.use(
             return Promise.reject(config.data);
         } else {
             console.log('网络连接异常,请稍后再试');
+            return Promise.reject(error);
         }
-    }
-);
-
-// axios实例拦截请求
-// axios实例拦截请求
-http.interceptors.request.use(
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (config: any) => {
-        const token = localStorage.getItem('app_token');
-        if (token) {
-            config.headers.Authorization = `Bearer ${token}`;
-        }
-        return config;
-    },
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (error: any) => {
-        return Promise.reject(error);
     }
 );
