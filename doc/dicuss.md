@@ -78,7 +78,7 @@ js复制代码// 按钮文案、显示逻辑
 
  {['DREFT', 'AUDIT_FAILD', 'REVOKE'].includes(record.state) && isCurrentUserCreate && <Button>修改</Button>}
  
-// A 场景调用接口 1，B 场景调用接口 2，C 场景调用接口 3 和 4
+// A 场景调用接口 leetcode，B 场景调用接口 2，C 场景调用接口 3 和 4
 if (id) {
   this.operation = '修改';
   const res = await this.fetchInfo(id);
