@@ -1,5 +1,5 @@
 import { arrAndSet } from '@utils/array/arrAndSet.tsx';
-import test, { describe } from 'node:test';
+import { describe, expect, test } from 'vitest';
 
 describe('arrAndSet', () => {
     test('should concatenate two arrays and remove duplicate elements', () => {
