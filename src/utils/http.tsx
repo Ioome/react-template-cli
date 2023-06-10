@@ -2,14 +2,6 @@ import axios, { AxiosInstance, AxiosResponse } from 'axios';
 import qs from 'qs';
 import { showMessage } from './status.tsx';
 
-//返回 res.data 的interface
-export interface IResponse {
-    code: number | string;
-    data: never;
-    msg: string;
-}
-
-//返回的实例
 export const http: AxiosInstance = axios.create({
     timeout: 8000,
     baseURL: import.meta.env.VITE_BASE_URL,
@@ -18,7 +10,6 @@ export const http: AxiosInstance = axios.create({
         'Content-Type': 'application/x-www-form-urlencoded'
     },
     transformRequest: [
-        //请求
         function (data) {
             delete data.Authorization;
             data = qs.stringify(data);
