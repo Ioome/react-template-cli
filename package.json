@@ -57,7 +57,6 @@
     "devDependencies": {
         "@commitlint/cli": "^17.6.5",
         "@commitlint/config-conventional": "^17.6.5",
-        "@types/jest": "^29.5.2",
         "@types/node": "^20.2.5",
         "@types/qs": "^6.9.7",
         "@types/react": "^18.0.37",
