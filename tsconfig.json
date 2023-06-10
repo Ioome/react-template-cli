@@ -52,7 +52,10 @@
         "src"
     ],
     /*不编译的文件*/
-    "exclude": [],
+    "exclude": [
+        "node_modules",
+        "build"
+    ],
     "references": [
         {
             "path": "./tsconfig.node.json"
