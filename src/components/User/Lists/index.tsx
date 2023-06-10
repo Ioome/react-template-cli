@@ -6,7 +6,6 @@ import { User } from '@/interface/User/Lists/type.ts';
  * @constructor
  */
 const UserList: React.FC = () => {
-    console.log('sd');
     const [users, setUsers] = useState<User[]>([]);
     useEffect(() => {
         setUsers([{ id: 1, name: 'hello', email: '2572213252@qq.com' }]);
@@ -17,7 +16,7 @@ const UserList: React.FC = () => {
                 <h1>User Lists</h1>
                 <ul>
                     {users.map((users: User) => (
-                        <li>
+                        <li key={users.id}>
                             <h3>{users.name}</h3>
                             <p>Email: {users.name}</p>
                         </li>
