@@ -30,5 +30,8 @@ export default defineConfig({
             restart: ['vite.config.ts']
         })
     ],
-    test: {}
+    test: {
+        globals: true,
+        environment: 'jsdom'
+    }
 });
