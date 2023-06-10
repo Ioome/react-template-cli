@@ -359,14 +359,28 @@ XMLHttpRequests。
 #### tailwindcss 
 
 ```
-
+npm install -D tailwindcss
+npx tailwindcss init
 ```
 
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
 
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-
-
-
+到这里还需要引入 PostCss https://segmentfault.com/a/1190000003909268 样式才可生效，因为需要转换，官网方式目前已经提供.
 
 # 规范化 ❤️‍🔥 
 
