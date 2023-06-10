@@ -23,7 +23,6 @@
         "build": "tsc && vite build",
         "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
         "preview": "vite preview",
-        "test": "jest",
         "pre-check": "npm run lint",
         "postinstall": "husky install",
         "dev:local": "vite --mode _local",
@@ -58,6 +57,7 @@
     "devDependencies": {
         "@commitlint/cli": "^17.6.5",
         "@commitlint/config-conventional": "^17.6.5",
+        "@types/jest": "^29.5.2",
         "@types/node": "^20.2.5",
         "@types/qs": "^6.9.7",
         "@types/react": "^18.0.37",

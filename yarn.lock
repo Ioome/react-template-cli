@@ -1343,6 +1343,14 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
+"@types/jest@^29.5.2":
+  "integrity" "sha512-mSoZVJF5YzGVCk+FsDxzDuH7s+SCkzrgKZzf0Z0T2WudhBUPoF6ktoTPC4R0ZoCPCV5xUvuU6ias5NvxcBcMMg=="
+  "resolved" "https://registry.npmmirror.com/@types/jest/-/jest-29.5.2.tgz"
+  "version" "29.5.2"
+  dependencies:
+    "expect" "^29.0.0"
+    "pretty-format" "^29.0.0"
+
 "@types/json-schema@^7.0.9":
   "integrity" "sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA=="
   "resolved" "https://registry.npmmirror.com/@types/json-schema/-/json-schema-7.0.12.tgz"
@@ -2803,7 +2811,7 @@
   dependencies:
     "homedir-polyfill" "^1.0.1"
 
-"expect@^29.5.0":
+"expect@^29.0.0", "expect@^29.5.0":
   "integrity" "sha512-yM7xqUrCO2JdpFo4XpM82t+PJBFybdqoQuJLDGeDX2ij8NZzqRHyu3Hp188/JX7SWqud+7t4MUdvcgGBICMHZg=="
   "resolved" "https://registry.npmmirror.com/expect/-/expect-29.5.0.tgz"
   "version" "29.5.0"
@@ -4663,7 +4671,7 @@
   "resolved" "https://registry.npmmirror.com/prettier/-/prettier-2.8.8.tgz"
   "version" "2.8.8"
 
-"pretty-format@^29.5.0":
+"pretty-format@^29.0.0", "pretty-format@^29.5.0":
   "integrity" "sha512-V2mGkI31qdttvTFX7Mt4efOqHXqJWMu4/r66Xh3Z3BwZaPfPJgp6/gbwoujRpPUtfEF6AUUWx3Jim3GCw5g/Qw=="
   "resolved" "https://registry.npmmirror.com/pretty-format/-/pretty-format-29.5.0.tgz"
   "version" "29.5.0"
