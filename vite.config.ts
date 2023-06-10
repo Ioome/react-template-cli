@@ -7,7 +7,7 @@ export default defineConfig({
     define: {
         'process.env': process.env
     },
-    // envPrefix: 'APP_', 控制前缀
+    // envPrefix: 'APP_', 控制前
     resolve: {
         alias: {
             '@': '/src/',
