@@ -1,14 +1,10 @@
 import { http } from '@utils/http.tsx';
 
-export const getUserInfo = {
-    list() {
-        return http
-            .get(``)
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-    }
-};
+export function getUserInfo(data: never) {
+    return http({
+        url: `/assess/personKaoheRelation/getAdminTaskList`,
+        headers: { 'Content-Type': 'application/json' },
+        method: 'post',
+        data
+    });
+}
