@@ -152,6 +152,8 @@ pnpm create vite my-vue-app --template vue
 3. 增加项目插件 ✅
 4. 环境变量配置 ✅
 5. 打包图 ✅
+6. gzip 优化 ❎
+7. 打包预览 ❎
 
 #### 加快 Vite 构建速度
 
@@ -357,6 +359,7 @@ XMLHttpRequests。
 ```
 https://cn.vitest.dev/guide/
 https://juejin.cn/post/6912312960459210760#heading-4
+https://juejin.cn/post/7158824055926161422
 ```
 
 
