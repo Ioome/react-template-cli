@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import UserList from '@/components/User/Lists';
+import UserList from '../src/components/User/Lists';
 import { render, screen } from '@testing-library/react';
 
 /**
