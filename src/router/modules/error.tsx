@@ -1,9 +1,9 @@
 import React from 'react';
-import { RouteObjects } from '@/interface/Router';
+import { RouteObject } from '@/interface/Router';
 import lazyLoad from '@/router/utils/lazyLoad.tsx';
 
 // 错误页面模块
-const errorRouter: Array<RouteObjects> = [
+const errorRouter: Array<RouteObject> = [
     {
         path: '/403',
 
