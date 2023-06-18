@@ -1,5 +1,5 @@
-const AddresssError = () => {
-    return <div>404</div>;
+const AddressError = () => {
+    return <div>AddressesError</div>;
 };
 
-export default AddresssError;
+export default AddressError;

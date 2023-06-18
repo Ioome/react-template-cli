@@ -23,3 +23,9 @@ export interface RouteObject {
     meta?: MetaProps;
     isLink?: string;
 }
+
+export interface MetaRouters {
+    [item: string]: {
+        [key: string]: Array<unknown>;
+    };
+}

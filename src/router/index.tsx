@@ -1,16 +1,19 @@
 import { Navigate, useRoutes } from 'react-router-dom';
 import Login from '@/views/login';
-import { RouteObject } from '@/interface/Router';
-
-// const metaRouters = import.meta.glob('./modules/*.tsx');
+import { MetaRouters, RouteObject } from '@/interface/Router';
 
 const routerArray: RouteObject[] = [];
+const metaRouters: MetaRouters = import.meta.glob('./modules/*.tsx', { eager: true });
 
-// Object.keys(metaRouters).forEach((item) => {
-//     Object.keys(metaRouters[item]).forEach((key: any) => {
-//         routerArray.push(...metaRouters[item][key]);
-//     });
-// });
+Object.keys(metaRouters).forEach((item: string) => {
+    console.log('metaRouters', metaRouters);
+    console.log('item', item);
+    Object.keys(metaRouters[item]).forEach((key: string) => {
+        console.log('key', key);
+        console.log('metaRouters[item][key]', metaRouters[item][key]);
+        routerArray.push(...metaRouters[item][key]);
+    });
+});
 
 const rootRouter: RouteObject[] = [
     {
@@ -34,6 +37,8 @@ const rootRouter: RouteObject[] = [
 ];
 
 const Router = () => {
+    console.log(routerArray);
+    console.log(rootRouter);
     return useRoutes(rootRouter as never);
 };
 
