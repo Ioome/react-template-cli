@@ -1,38 +1,40 @@
-import { lazy } from 'react';
-import { RouteObject, useRoutes } from 'react-router-dom';
+import { Navigate, useRoutes } from 'react-router-dom';
+import Login from '@/views/login';
+import { RouteObject } from '@/interface/Router';
 
-/**
- * Quick import tool function
- * 懒加载
- * @param moduleName
- */
-const lazyLoad = (moduleName: string) => {
-    const Module = lazy(() => import(`pages/${moduleName}`));
-    return <Module />;
-};
+// const metaRouters = import.meta.glob('./modules/*.tsx');
 
-//路由鉴权
-// const Appraisal = ({ children }: any) => {
-//     const token = localStorage.getItem("token");
-//     return token ? children : <Navigate to="/login" />;
-// };
+const routerArray: RouteObject[] = [];
 
-/**
- * Create a router table
- */
-const router: RouteObject[] = [
+// Object.keys(metaRouters).forEach((item) => {
+//     Object.keys(metaRouters[item]).forEach((key: any) => {
+//         routerArray.push(...metaRouters[item][key]);
+//     });
+// });
+
+const rootRouter: RouteObject[] = [
     {
-        path: '/login',
-        element: lazyLoad('login')
+        path: '/',
+        element: <Navigate to="/login" />
     },
     {
-        path: '/newsViews',
-        element: lazyLoad('news')
+        path: '/login',
+        element: <Login />,
+        meta: {
+            requiresAuth: false,
+            title: '登录页',
+            key: 'login'
+        }
+    },
+    ...routerArray,
+    {
+        path: '*',
+        element: <Navigate to="/404" />
     }
 ];
 
 const Router = () => {
-    return useRoutes(router);
+    return useRoutes(rootRouter as never);
 };
 
 export default Router;

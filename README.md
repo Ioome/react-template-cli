@@ -361,7 +361,7 @@ XMLHttpRequests。
 
 ## router 配置
 
-![React Router v6 - Protected Routes, Nested Routes, Active Link, Search ...](https://i.ytimg.com/vi/d5kJDe1Y6ZU/maxresdefault.jpg)
+![React Index v6 - Protected Routes, Nested Routes, Active Link, Search ...](https://i.ytimg.com/vi/d5kJDe1Y6ZU/maxresdefault.jpg)
 
 
 
