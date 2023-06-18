@@ -5,7 +5,7 @@
 ### 1. Vite 导入 npm i -D vite-plugin-logger ,安装依赖产生
 
 ```ts
-TS2349: This expression is not callable.   Type 'typeof import("E:/react-all-vite-template/node_modules/vite-plugin-logger/dist/index")' has no call signatures
+TS2349: This expression is not callable.   Type 'typeof import("E:/react-all-vite-template/node_modules/vite-plugin-logger/dist/home")' has no call signatures
 
 ```
 
