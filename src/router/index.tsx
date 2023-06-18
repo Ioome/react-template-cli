@@ -1,5 +1,4 @@
 import { lazy } from 'react';
-import Router from '@/interface/Router/Router.ts';
 
 /**
  * Quick import tool function
@@ -20,7 +19,7 @@ const lazyLoad = (moduleName: string) => {
 /**
  * Create a router table
  */
-const router: Array<Router> = [
+const router = [
     {
         path: '/login',
         element: lazyLoad('login')

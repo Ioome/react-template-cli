@@ -2,7 +2,7 @@ interface Router {
     name?: string;
     path: string;
     children?: Array<Router>;
-    element: any;
+    element: never;
 }
 
 export default Router;
