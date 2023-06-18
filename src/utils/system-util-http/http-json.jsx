@@ -1,4 +1,4 @@
-import { http } from '@utils/system-http/http.tsx';
+import { http } from '@utils/system-util-http/http.tsx';
 
 export function httpJson(type, url, data, config) {
     return http[type](url, data, {

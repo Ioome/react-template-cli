@@ -1,4 +1,4 @@
-import { http } from '@utils/system-http/http.tsx';
+import { http } from '@utils/system-util-http/http.tsx';
 
 export function getUserInfo(data: never) {
     return http({
