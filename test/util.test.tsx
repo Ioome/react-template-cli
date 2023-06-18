@@ -1,4 +1,4 @@
-import { arrAndSet } from '../src/utils/array/arrAndSet.tsx';
+import { arrAndSet } from '../src/utils/system-array/arrAndSet.tsx';
 import { describe, expect, test } from 'vitest';
 
 describe('arrAndSet', () => {

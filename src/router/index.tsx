@@ -1,4 +1,5 @@
 import { lazy } from 'react';
+import { RouteObject, useRoutes } from 'react-router-dom';
 
 /**
  * Quick import tool function
@@ -19,7 +20,7 @@ const lazyLoad = (moduleName: string) => {
 /**
  * Create a router table
  */
-const router = [
+const router: RouteObject[] = [
     {
         path: '/login',
         element: lazyLoad('login')
@@ -30,4 +31,8 @@ const router = [
     }
 ];
 
-export default router;
+const Router = () => {
+    return useRoutes(router);
+};
+
+export default Router;

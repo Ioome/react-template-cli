@@ -63,7 +63,9 @@ npm test
 yarn test
 ```
 
+## LOGO
 
+> https://app.logo.com/business-name
 
 # 项目构建基构
 
@@ -155,7 +157,9 @@ pnpm create vite my-vue-app --template vue
 6. gzip 优化 ❎
 7. 打包预览 ❎
 
-#### 加快 Vite 构建速度
+#### 加快 Vite 构建速度 ❎
+
+
 
 #### 使用 插件[plugin] 定制化
 
