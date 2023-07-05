@@ -1,6 +1,6 @@
-<h1 align="center">Vite  + React 通用模板😈</h1>
+<h1 align="center">Vite+React 脚手架</h1>
 
-![4k](https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+![4k](https://img1.imgtp.com/2023/07/05/G967WiL3.png)
 
 `开箱即用的项目模板，拥有主流的技术搭配` 快速构建同通用系统框架 ,该项目模板提供了一个现成的基础框架，使您能够立即开始开发项目，无需从头构建系统。它集成了一系列主流的技术.
 
