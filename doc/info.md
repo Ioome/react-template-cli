@@ -1,10 +1,10 @@
-## 开发服务器[¶](https://cn.vitejs.dev/guide/cli.html#dev-server)
+## 开发服务器[](https://cn.vitejs.dev/guide/cli.html#dev-server)
 
-### `vite`[¶](https://cn.vitejs.dev/guide/cli.html#vite)
+### `vite`[](https://cn.vitejs.dev/guide/cli.html#vite)
 
 在当前目录下启动 Vite 开发服务器。
 
-#### 使用[¶](https://cn.vitejs.dev/guide/cli.html#usage)
+#### 使用[](https://cn.vitejs.dev/guide/cli.html#usage)
 
 
 
@@ -12,7 +12,7 @@
 vite [root]
 ```
 
-#### 选项[¶](https://cn.vitejs.dev/guide/cli.html#options)
+#### 选项[](https://cn.vitejs.dev/guide/cli.html#options)
 
 | 选项                     |                                              |
 | :----------------------- | :------------------------------------------- |
@@ -33,13 +33,13 @@ vite [root]
 | `-h, --help`             | 显示可用的 CLI 选项                          |
 | `-v, --version`          | 显示版本号                                   |
 
-## 构建[¶](https://cn.vitejs.dev/guide/cli.html#build)
+## 构建[](https://cn.vitejs.dev/guide/cli.html#build)
 
-### `vite build`[¶](https://cn.vitejs.dev/guide/cli.html#vite-build)
+### `vite build`[](https://cn.vitejs.dev/guide/cli.html#vite-build)
 
 构建生产版本。
 
-#### 使用[¶](https://cn.vitejs.dev/guide/cli.html#usage-1)
+#### 使用[](https://cn.vitejs.dev/guide/cli.html#usage-1)
 
 
 
@@ -47,7 +47,7 @@ vite [root]
 vite build [root]
 ```
 
-#### 选项[¶](https://cn.vitejs.dev/guide/cli.html#options-1)
+#### 选项[](https://cn.vitejs.dev/guide/cli.html#options-1)
 
 | 选项                           |                                                              |
 | :----------------------------- | :----------------------------------------------------------- |
@@ -72,13 +72,13 @@ vite build [root]
 | `-m, --mode <mode>`            | 设置环境模式 (`string`)                                      |
 | `-h, --help`                   | 显示可用的 CLI 选项                                          |
 
-## 其他[¶](https://cn.vitejs.dev/guide/cli.html#others)
+## 其他[](https://cn.vitejs.dev/guide/cli.html#others)
 
-### `vite optimize`[¶](https://cn.vitejs.dev/guide/cli.html#vite-optimize)
+### `vite optimize`[](https://cn.vitejs.dev/guide/cli.html#vite-optimize)
 
 预构建依赖。
 
-#### 使用[¶](https://cn.vitejs.dev/guide/cli.html#usage-2)
+#### 使用[](https://cn.vitejs.dev/guide/cli.html#usage-2)
 
 
 
@@ -86,7 +86,7 @@ vite build [root]
 vite optimize [root]
 ```
 
-#### 选项[¶](https://cn.vitejs.dev/guide/cli.html#options-2)
+#### 选项[](https://cn.vitejs.dev/guide/cli.html#options-2)
 
 | 选项                     |                                            |
 | :----------------------- | :----------------------------------------- |
@@ -100,11 +100,11 @@ vite optimize [root]
 | `-m, --mode <mode>`      | 设置环境模式 (`string`)                    |
 | `-h, --help`             | 显示可用的 CLI 选项                        |
 
-### `vite preview`[¶](https://cn.vitejs.dev/guide/cli.html#vite-preview)
+### `vite preview`[](https://cn.vitejs.dev/guide/cli.html#vite-preview)
 
 本地预览构建产物。不要将其用作生产服务器，因为它不是为此而设计的。
 
-#### 使用[¶](https://cn.vitejs.dev/guide/cli.html#usage-3)
+#### 使用[](https://cn.vitejs.dev/guide/cli.html#usage-3)
 
 
 
@@ -112,7 +112,7 @@ vite optimize [root]
 vite preview [root]
 ```
 
-#### 选项[¶](https://cn.vitejs.dev/guide/cli.html#options-3)
+#### 选项[](https://cn.vitejs.dev/guide/cli.html#options-3)
 
 | 选项                     |                                              |
 | :----------------------- | :------------------------------------------- |
