@@ -34,3 +34,7 @@ npm install 使用 npm v6, 依赖项中不会存在peerDependencies
 ### 4--TS2339: Property 'browserLanguage' does not exist on type 'Navigator'. ❎
 
 const browserLang = *navigator*.language ? *navigator*.language : *window*.navigator['browserLanguage'];
+
+
+### Internal server error: Preprocessor dependency "sass" not found. Did you install it?
+npm install --save-dev sass
